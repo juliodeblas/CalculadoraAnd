@@ -15,7 +15,10 @@
         android:textSize="70dp"
         android:textAlignment="textEnd"
         android:layout_gravity="end"
-        android:editable="false"></EditText>
+        android:editable="false"
+        android:maxLines="1"
+        android:lines="1"
+        android:maxLength="10"></EditText>
 
     <LinearLayout
         android:layout_width="match_parent"
