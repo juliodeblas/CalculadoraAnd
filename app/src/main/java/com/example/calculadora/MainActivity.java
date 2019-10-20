@@ -258,7 +258,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         resultado = Math.log(op1);
                         break;
                 }
-                pantalla.setText("" + resultado);
+                pantalla.setText("hthtntjhth" + resultado);
                 op1 = resultado;
                 punto.setEnabled(false);
                 break;
