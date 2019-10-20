@@ -89,13 +89,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.boton0:
-                if (pantalla.getText().equals("")) {
-                    pantalla.setText("0.");
-                    punto.setEnabled(false);
-                } else {
-                    pantalla.setText(pantalla.getText() + ".");
-                    punto.setEnabled(false);
-                }
+                cap = pantalla.getText().toString();
+                cap += "0";
+                pantalla.setText(cap);
                 break;
             case R.id.boton1:
                 cap = pantalla.getText().toString();
@@ -263,6 +259,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         break;
                 }
                 pantalla.setText("" + resultado);
+                op1 = resultado;
                 punto.setEnabled(false);
                 break;
             case R.id.botonC:
